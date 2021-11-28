@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper,11pt,oneside, english]{article}
-\usepackage[a4paper,bindingoffset=0cm,left=2.5cm,right=1.9cm,top=1.5cm,bottom=2.2cm,width=16cm,footskip=0.5cm]{geometry}
+\usepackage[a4paper,bindingoffset=0cm,left=2.5cm,right=2.5cm,top=1.5cm,bottom=1.8cm,width=16cm,footskip=0.5cm]{geometry}
 
 \usepackage{eurosym}
 \input{NextLatexPackagesBase.tex}
@@ -24,12 +24,13 @@
 \setlength{\headheight}{1cm}
 \setlength{\headsep}{0.7cm}
 \pagestyle{fancyplain}
-\fancyheadoffset[HL]{2cm}
-\fancyheadoffset[HR]{1.5cm}
+\fancyheadoffset[HL]{0.0cm}
+\fancyheadoffset[HR]{0.0cm}
 \fancyhf{}
-\lhead{\raisebox{-0.4\height}{\includegraphics[height=1.6cm,keepaspectratio=true]{minCien.pdf}\includegraphics[height=1.6cm,keepaspectratio=true]{UE_fondo.pdf}}}
-\chead{\fancyplain{}{\fontsize{6.6}{12} \selectfont \textbf{\hspace{6.0cm}\underline{MEMORIA CIENT\'IFICO-T\'ECNICA DE PROYECTOS COORDINADOS}}}}
-\rhead{\raisebox{-0.4\height}{\includegraphics[height=1.7cm,keepaspectratio=true]{agencia_estatal.jpg}}}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=1.7cm,keepaspectratio=true]{ministerio.png}}}
+%\chead{\fancyplain{}{\fontsize{6.6}{12} \selectfont \textbf{\hspace{6.0cm}}}}
+\chead{\raisebox{-0.4\height}{\includegraphics[height=1.7cm,keepaspectratio=true]{UE.png}}}
+\rhead{\raisebox{-0.4\height}{\includegraphics[height=1.6cm,keepaspectratio=true]{agencia_estatal.jpg}}}
 \cfoot{\thepage\ de \pageref{LastPage} }
 \renewcommand{\headrulewidth}{0pt} % remove lines
 \renewcommand{\footrulewidth}{0pt}
@@ -38,30 +39,32 @@
 \renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
 \titleformat{\section}{\large\bfseries}{\thesection}{0.2em}{}
 
-
+\parindent=3pt
 \begin{document}
 
 \begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt]
   \begin{center}
-    AGENCIA ESTATAL DE INVESTIGACI\'ON - Convocatoria 2021\\
-    Proyectos de I+D de GENERACI\'ON DE CONOCIMIENTO y\\
-    Proyectos de I+D+i RETOS INVESTIGACI\'ON
+    {\bf MEMORIA CIENT\'IFICO-T\'ECNICA DE PROYECTOS COORDINADOS\\
+    Convocatoria 2021 «Proyectos de Generación de Conocimiento»}
   \end{center}
 \end{tcolorbox}
 \vspace{-0.2cm}
 \begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm,right=0mm]
   \begin{center}
-    {\bf \small AVISO IMPORTANTE - La memoria no podr\'a exceder de 30 p\'aginas. Para rellenar
+    {\bf \small AVISO IMPORTANTE - La memoria no podr\'a exceder de 35 p\'aginas. Para rellenar
       correctamente esta memoria, lea detenidamente las instrucciones disponibles en la web de la
-      convocatoria. Es obligatorio rellenarla en ingl\'es si se solicita m\'as de 100.000,00 \euro.}
+      convocatoria. Es obligatorio rellenarla en ingl\'es si se solicita 100.000,00 \euro\ o m\'as (en costes directos) }
   \end{center}
   \begin{center}
-    {\bf \small IMPORTANT -- The research proposal cannot exceed 30 pages. Instructions to fill this document
-      are available in the website. If the project cost exceeds 100.000,00 \euro, this document must be
+    {\bf \small IMPORTANT -- The research proposal cannot exceed 35 pages. Instructions to fill this document
+      are available in the website. If the project cost is equal or greater than 100.000,00 \euro, this document must be
       filled in English}
   \end{center}
 \end{tcolorbox}
-\noindent{\bf T\'ITULO DEL PROYECTO COORDINADO (ACR\'ONIMO):} Explotación científica del detector NEXT-100 y R\&D para el detector NEXT-HD (NEXT) \\
+	\section{\small DATOS DE LA PROPUESTA -- PROPOSAL DATA}
+	\begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm,right=0mm]
+\noindent{\bf 1. T\'ITULO DEL PROYECTO COORDINADO (ACR\'ONIMO):} Explotación científica del detector NEXT-100 y R\&D para el detector NEXT-HD (NEXT) 
+\end{tcolorbox}
 {\bf \emph{TITLE OF THE COORDINATED PROJECT (ACRONYM):}} Scientific exploitation of the NEXT-100 detector and R\&D for the NEXT-HD apparatus (NEXT)
 \vspace{3pt}
 \begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
@@ -73,7 +76,7 @@
 {\bf T\'ITULO - \emph{TITLE}: Coordination of the NEXT-100 project \& construction of the HD-DEMO prototype (\sDIPC)}\\
 \noindent{\bf \underline{SUBPROYECTO 2:}}\\
 {\bf IP 1 COORDINATOR 1}: Pau Novella\\
-{\bf IP 2 COORDINATOR 2}: Justo Mart\'in-Algbo\\
+{\bf IP 2 COORDINATOR 2}: Justo Mart\'in-Albo\\
 {\bf T\'ITULO - \emph{TITLE}: Data analysis for NEXT-100 \& R\&D for the HD Energy Detector  (\sIFIC)}\\
 \noindent{\bf \underline{SUBPROYECTO 3:}}\\
 {\bf IP 1}: Ra\'ul Esteve Bosch\\
@@ -87,11 +90,9 @@
 {\bf T\'ITULO - \emph{TITLE}: Preparation of the infrastructures for NEXT-HD (\sLSC)}
 
 
-\section{JUSTIFICACI\'ON DE LA COORDINACI\'ON - \emph{RATIONALE FOR COORDINATION}}
+\section{\small ANTECEDENTES, ESTADO ACTUAL Y JUSTIFICACIÓN DE LA PROPUESTA - BACKGROUND, CURRENT STATUS AND JUSTIFICATION OF THE PROPOSAL}
 \label{sec.just}
 \input{src/Coordination.tex}
-
-\section{PROPUESTA CIENT\'IFICA - \emph{SCIENTIFIC PROPOSAL}}
 \label{sec.proposal}
 \input{src/intro.tex}
 \input{src/the_search_for_bbonu2.tex}
@@ -99,22 +100,30 @@
 \input{src/next-100.tex}
 \input{src/next-hd.tex}
 
-%\input{src/Objectives.tex}
-%\input{src/ObjCoord.tex}
-%\input{src/ObjSENSE.tex}
-%\input{src/ObjELEC.tex}
-%\input{src/ObjCALMU.tex}
-%\input{src/Methodology.tex}
-%\input{src/BUDGET.tex}
+\section{\small  OBJETIVOS, METODOLOGÍA Y PLAN DE TRABAJO - OBJECTIVES, METHODOLOGY AND WORK PLAN}
 
-\section{IMPACTO ESPERADO DE LOS RESULTADOS - \emph{EXPECTED RESULTS IMPACT}}
+
+\input{src/Objectives.tex}
+\input{src/objDIPC.tex}
+\input{src/objIFIC.tex}
+\input{src/objUSC.tex}
+\input{src/objUPV.tex}
+\input{src/objLSC.tex}
+\input{src/Methodology.tex}
+\input{src/BUDGET.tex}
+
+\section{\small  IMPACTO CIENTÍFICO-TÉCNICO - SCIENTIFIC-TECHNICAL IMPACT}
 \label{sec.impact}
-%\input{src/Impact.tex}
-%\section{CAPACIDAD FORMATIVA - \emph{TRAINING CAPACITY}}
-%\label{sec.training}
-%\input{src/Training.tex}
-\section{IMPLICACIONES \'ETICAS Y/O DE BIOSEGURIDAD - \emph{ETHICAL AND/OR BIOSAFETY IMPLICATIONS}}
-\label{sec.ethics}
+\input{src/ImpactC.tex}
+\section{\small  IMPACTO SOCIAL Y ECONÓMICO - SOCIAL AND ECONOMIC IMPACT}
+\label{sec.social}
+\input{src/ImpactoS.tex}
+
+\section{\small CAPACIDAD FORMATIVA - TRAINING CAPACITY}
+\label{sec.training}
+\input{src/Training.tex}
+\section{\small  CONDICIONES ESPECÍFICAS PARA LA EJECUCIÓN DE DETERMINADOS PROYECTOS – SPECIFIC CONDITIONS FOR THE EXECUTION OF CERTAIN PROJECTS}
+\label{sec.specs}
 None.
 
 \section{Bibliography}
