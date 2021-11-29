@@ -31,7 +31,7 @@
 \end{figure}
 
 
- The HPXe technology benefits from the economy of scale inherent to homogeneous experiments in which the \bbonu\ source and the detector are the same. The necessary factor of 10 increase in fiducial mass is obtained by increasing the detector linear dimensions (parallel and perpendicular to the TPC drift direction) by slightly more than a factor of 2 compared to \NEXT. At the same time, the background rate (after cuts) must be kept in the ``quasi-zero'' regime of less than one event per year in the ROI. This requires a detector with improved radiopurity at the ton-scale. This is achieved by the combination of: {\bf i)} a reduced background budget, achieved, in particular, by eliminating the leading source of background (the PMTs of the EP, which is replaced by a low-background system, the barrel fiber detector, BFD) and further reduce other background sources (thinner kapton boards, titanium frames for the grids and ultra-low radioactivity resistors);  {\bf ii)} improvement of the energy resolution from 1\% to 0.5--0.7\% FWHM at \Qbb, possible thanks to the better  performance of BFD which collects more light than \Next\ EP and is less affected by geometrical corrections; and {\bf iii)} improvement of the rejection power of the topological signature, by reducing the diffusion through the use of low-diffusion Xe-He mixtures. The resulting apparatus will have ``higher definition'' of the signal, w.r.t. previous NEXT apparatus, thus the label HD (``high definition''). 
+ The HPXe technology benefits from the economy of scale inherent to homogeneous experiments in which the \bbonu\ source and the detector are the same. The necessary factor of 10 increase in fiducial mass is obtained by increasing the detector linear dimensions (parallel and perpendicular to the TPC drift direction) by slightly more than a factor of 2 compared to \NEXT. At the same time, the background rate (after cuts) must be kept in the ``quasi-zero'' regime of less than one event per year in the ROI. This requires a detector with improved radiopurity at the ton-scale. This is achieved by the combination of: {\bf i)} a reduced background budget, achieved, in particular, by eliminating the leading source of background (the PMTs of the EP, which is replaced by a low-background system, {\bf the barrel fibre detector, BFD}) and further reduce other background sources (thinner kapton boards, titanium frames for the grids and ultra-low radioactivity resistors);  {\bf ii)} improvement of the energy resolution from 1\% to 0.5--0.7\% FWHM at \Qbb, possible thanks to the better  performance of BFD which collects more light than \Next\ EP and is less affected by geometrical corrections; and {\bf iii)} improvement of the rejection power of the topological signature, by reducing the diffusion through the use of low-diffusion Xe-He mixtures and increase the density of the SiPMs coverage with respect to that in \NEW\ and \Next\ ({\bf Dense Silicon Planes, DSP}). The resulting apparatus will have ``higher definition'' of the signal, w.r.t. previous NEXT apparatus, thus the label HD (``high definition''). 
  
  \indent
  
@@ -40,11 +40,11 @@ The major change in the design with respect to the current apparatus is the tran
 
 \indent
 
-The second major change ---dictated by both the symmetric detector design and the need to reduce the background budget--- is the substitution of the energy plane (made of PMTs viewing the active volume) by an alternate energy measurement solution.  An attractive solution is a barrel detector made of wavelength-shifting optical fibres. The fibres, coated with tetraphenyl-butadiene (TPB) shift first the impinging VUV photons to violet photons (with an average wavelength circa \SI{420}{\nm}). Those photons are absorbed by the fibers which re-emit green light (circa  \SI{530}{\nm}). Green photons propagating by total internal reflection inside the double-clad fibres reach the fibres ends, which are grouped in bundles and read out by either PMTs or SiPMs. Our Monte Carlo studies show that the light collection of this Barrel Fibre Detector (BFD) is at least 50\% larger than that of a conventional NEXT energy plane. This, together with the expected soft geometrical corrections (which, to first order, should follow a smooth radial dependence) would imply a corresponding improvement in the detector energy resolution. The BFD will also measure \sone, providing the start-of-the-event.  The middle and right panels of figure \ref{fig.NHD} show conceptual drawings. 
+The second major change ---dictated by both the symmetric detector design and the need to reduce the background budget--- is the substitution of the energy plane (made of PMTs viewing the active volume) by an alternate energy measurement solution.  An attractive solution is a barrel detector made of wavelength-shifting optical fibres ({\bf BFD}). The fibres, coated with tetraphenyl-butadiene (TPB) shift first the impinging VUV photons to violet photons (with an average wavelength circa \SI{420}{\nm}). Those photons are absorbed by the fibres which re-emit green light (circa  \SI{530}{\nm}). Green photons propagating by total internal reflection inside the double-clad fibres reach the fibres ends, which are grouped in bundles and read out by either PMTs or SiPMs. Our Monte Carlo studies show that the light collection of this Barrel Fibre Detector (BFD) is at least 50\% larger than that of a conventional NEXT energy plane. This, together with the expected soft geometrical corrections (which, to first order, should follow a smooth radial dependence) would imply a corresponding improvement in the detector energy resolution. The BFD will also measure \sone, providing the start-of-the-event.  The middle and right panels of figure \ref{fig.NHD} show conceptual drawings. 
 
 \indent
 
-Last but not least, the possibility to reduce diffusion and thus improve the rejection power of the topological signature calls for a fine granularity tracking system. Dense SiPM planes (DSPs), with a pitch of the order of \SI{7}{\mm}) will allow a better measurement of the track trajectories. The impact of reduced diffusion and fine granularity is illustrated in figure  \ref{fig.DSP}. 
+Last but not least, the possibility to reduce diffusion and thus improve the rejection power of the topological signature calls for a fine granularity tracking system. Dense SiPM planes ({\bf DSPs}), with a pitch of the order of \SI{7}{\mm}) will allow a better measurement of the track trajectories. The impact of reduced diffusion and fine granularity is illustrated in figure  \ref{fig.DSP}. 
 %Notice that the reconstruction using fine grain pixels provided by the DSPs, and helium-xenon mixtures, together with the sophisticated deconvolution developed by NEXT \cite{NEXT:2020jmz} results in tracks very similar to those obtained by pure Monte Carlo simulation, showing that one can maximally exploit the electron identification. 
 
 %The DSPs also provide two independent measurements of the energy of the event, one in the plane where the EL is produced and another in the opposite plane, the two measurements being affected by different geometrical corrections. The two DSP energy measurements are also statistically independent of the energy measurement provided by the BFD. According to our calculations, this redundancy may provide an improved energy resolution, in the range 0.5--0.7\% FWHM at \Qbb. 
@@ -232,47 +232,5 @@ The sensitivity projected for \NHD\ can be seen in the right panel of  figure~\r
 %\includegraphics[width=0.85\textwidth]{img/sensitivity_nexthd_lsc.pdf}
 %\caption{Projected sensitivity (90\% CL) to the \Xe{136} \bbonu\ half-life for a NEXT ton-scale experiment located at LSC. \label{fig:Sensitivity}}
 %\end{figure}
-
-\subsection{The \HDEMO\ prototype}
-
-\begin{figure}
-  \begin{center}
-    %\includegraphics[width=0.31\textwidth]{img/Fiber13D.png}
-    \includegraphics[width=0.51\textwidth]{img2/nhd_vessel.jpg}
-    \includegraphics[width=0.45\textwidth]{img2/nhd_view.jpg}
-    \caption{Conceptual design of the \HDEMO. The left panel shows a lateral view including the vessel. Notice the symmetric structure and the ports for
-    the high voltage feedthroughs. In this design, shown in more detail in the right panel, the fibers are read out by PMTs disposed as a ring around the silicon planes.} 
-    \label{fig.hdemo}
-  \end{center}
-\end{figure}
-
-
-\indent
-
-
-The R\&D towards \NHD\ requires the construction, commissioning and operation of a mid-size demonstrator that we call \HDEMO. The apparatus, shown in figure \ref{fig.nhd}, will permit addressing several key questions. Specifically:
-
-\indent
-
-
-\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
-\item Demonstrate the expected light yield and energy resolution of the BDF (we project 0.5\%--0.7\% FWHM). Decide whether the fibres will be readout using PMTs (as shown in figure \ref{fig.hdemo}) or by SiPMs. 
-\item Demonstrate the improvement of the topological signature using DSPs (pitch of 7 mm) and Xe-He mixtures. Find the best compromise between pitch, diffusion and cost. 
-\item Assess the potential of new materials, in particular titanium vs low radioactivity steel alloys, for the pressure vessel and the grids. 
-\item Gain experience with the construction and integration of a symmetric TPC (all previous NEXT incarnations have been asymmetric). 
-\item Test the new electronics for the BFD and DSP.
-\item Test the new DAQ for \NHD.  
-\item Test the overall system integration. 
-\end{itemize}
-
-\indent
-
-
-The detector will have a diameter of \HDD and a length of \HDL, divided in two identical halves. The central cathode will be at a high voltage of \HDHV, while the two anodes will be at ground. The vessel will stand a pressure in excess of 20 bars. The operational pressure will be the same than \Next\ (and foreseen for \NHD), \eg, 15 bars. The xenon mass at that pressure will be \HDM. 
-
-\indent
-
-
-The three main systems of \HDEMO are a prototype of the BFD (pBFD), a prototype of the DSPs (pDSP) and a prototype of the TPC (pTPC). The detector will be hosted in a pressure vessel (PV) made of steel or titanium, and protected by an external lead shield, but no inner copper shield is necessary (the operation of the detector, with radioactive sources, does not require ultra-low background). The operation of \HDEMO\ requires a fully equipped laboratory and a state-of-the-art gas system, all of which will be provided by the laboratory hosting the apparatus (DIPC). 
 
 %%%%%%%%%%
