@@ -1,29 +1,63 @@
 \subsection{Objectives of the \sUSC\ subproject}
-\label{sec.obj.dipc}
-\subsubsection*{Operation of \Next}
+\label{sec.obj.usc}
 
 \indent
 
-USC will contribute to the operation of the \Next\ detector, providing shifters, and will play a major role in the development of software tools (reconstruction software, Monte Carlo simulation). USC will also lead the calibration of the detector. 
 
+USC takes three main responsibilities within this project: {\bf i:} calibration of the \Next\ detector, {\bf ii:} coordination, maintenance and development of the \Next\ software, {\bf iii:} development of the simulation and reconstruction software for \HDEMO\. In addition USC will contribute to the \Next\ operation and data analysis, as it was done with \NEW.
 
-\subsubsection*{\HDEMO\ prototype}
+\subsubsection{Calibration of the \Next\ detector.}
 
-\indent
+The experience with \NEW\ has demonstrated that the calibration with radioactive sources, \KR, \CS, \TL, is essential to estimate the energy scale and an obtain the required energy resolution. The daily calibration with \KR, which continuously flows within the gas inside the chamber, allow us to monitor the lifetime evolution, and thanks to its point-like energy deposit (41.5 keV), to map the detector response in the active volume. \CS\ and \TL\ external sources  provide specific candles to estimate the energy scale and resolution. In addition, the double-escape peak of the \TL\ gamma of 2.6 MeV allow us to estimate the power of the topological discrimination. USC has been responsible of the calibration and monitoring of \NEW. These tasks will be again essential in \Next. 
 
-USC will be in charge of developing the software for \HDEMO, including reconstruction and simulation of the system. 
- 
+\Next\ will be calibrated with ~4 M \KR\ triggers per day and with specific \CS\ and \TL\ runs every month. USC will be responsible of adapting, improving, and operating the calibration procedures of \Next. This activity will be done by the calibration convener (J. Renner) and one FPI fellow, requested in this project. 
+
+\subsection{Coordination of the \Next\ software.}
+
+The USC has coordinated the NEXT software, which implies: i) supervision and planning of the software project, ii) maintenance, adaptation and improvement of the collaboration common code. In \NEW\ theses tasks have been the responsibility of J.A. Hernando (software coordinator), with the help of a dedicated software physicist (software technical manager, {\bf STC}). For this project we request a three-year position to fill the crucial role of STC. 
+
+NEXT collaboration has been pioneered to use software based on Python, novel frameworks based on functional programming, and scientific modern libraries. Special attention has been put on development of a robust, reusable, and modern code in order to facilitate the data exploitation by the physicist. The NEXT software is periodically reviewed by external and professional software engineers (J. Generowicz). The same philosophy will apply to the software of \HDEMO.
+
+This responsibility includes the planing of the software sub-projects, identifying the algorithms to improve or develop; and the coordination and follow up of the progress. This tasks requires continuous coordination with the code developers as well as with the analysis coordinator and the management of the experiment.
+
+The main specific tasks for the next years are: i) adaptation of the calibration code to \Next\ ii) update and critical revision of the reconstruction algorithms iii) modification of the high level reconstruction programs to establish a clear interfaces which will allow contributors to develop new tracking reconstruction and particle identification algorithms based on convolution techniques, image processing or Neural Networks. There has been a large progress in the last years in our understanding of the tracking reconstruction with \NEW\ data, and these progress will be adapted and improved for \NEXT\ and \HD\.
+
+This project requests the funds to hire a postdoc as {\bf technical software coordinator}, highly skilled in scientific programming and managing collaborative software, who can replace M. Kekic. 
+
+\subsubsection{Simulation of \HDEMO\ prototype}
+
+USC, in particular G. Diaz (student), in collaboration with IFIC (J. Marti), has implemented the detailed GEANT4 simulation of \New\ and \Next, and the development of simulation algorithms to avoid the follow-up of the large number of photons produced in the full simulation. The simulation the NEXT detectors and demonstrators is crucial to improve its design and to understand its performance. 
+
+USC will be in charge of developing the code for \HDEMO\ simulation, which includes a two way approach: i) a simplified implementation which can be easily adapted to implement other detector designs, ii) a detailed \HDEMO implementation. This task requires a high level programmer with good knowledge on GEANT4 and large physics knowledge. 
+
+In addition USC will take care of the adaptation and development of reconstruction algorithms for \HDEMO\. USC is currently developing a novel 3D image processing and NN algorithms to identify tracks for \Next.
+
+This task will be done by the postdoc requested as technical software coordinator, and who will supervise one student (M. Pérez).
 
 
 
 \subsubsection*{Personnel in the Working Plan}
-The working plan for \sIFIC\ involves XXX FTEs (JA, Josh) and YYY Ph.D. students (Gonzalo...). The responsibilities on the project of the existing personnel are:
 
+The working plan for \sUSC involves 2 FTEs (J.A. Hernando, and J. Renner). J. Renner and 3 Ph.D. students (G. Díaz, C. Hervés and M. Pérez).
 
 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
-\item J.A. Hernando is the software coordinator of NEXT.  
+\item J.A. Hernando is the software coordinator of NEXT. He is responsible of the organisation an planing of the collaboration software in close contact with the analysis coordinator and the experiment management.
+
+\item J. Renner, he is the responsible of the calibration of \New, and supervises a Ph.D. Student (C. Hervés)
+
+\item G. Díaz will finish his Ph.D during the duration of this project. His Ph.D. thesis is about the simulation and performance of \Next. He will participate in the initial parts of the \HDEMO\ simulation.
+
+
 \end{itemize}
 
-We request for this project 1 post-doc. 
+J. Renner will be financed by external sources. G. Díaz has a grant by Xunta de Galicia. C. Hervés, M. Pérez will be financed by external sources but they have a large probability to obtain a Ph.D. grant by la Xunta de Galicia.
 
-The project is extremely suited for students, given the large training potential of our project, which includes detector operation, data analysis, Monte Carlo simulation, and the opportunity to contribute to the construction and operation of a cutting edge HPXe, the \HDEMO\ demonstrator. In this project we apply for one FPI position. 
+In this project we {\bf request a postdoc} who will be the {\bf technical software coordinator} of the collaboration. The assigned tasks are:
+
+\begin{enumerate}
+    \item to be responsible of the technical code integration, review of the software contributions and develop common code for the collaboration. 
+    
+    \item  develop the \HDemo\ simulation, and supervise a student (M. Pérez). 
+\end{enumerate}
+
+We request {\bf a FPI}, given the demonstrated training capabilities of the USC, and the large training potential of the project, which includes detector operation, data analysis, Monte Carlo simulation, and the opportunity to contribute to the construction and operation of a cutting edge HPXe, the \HDEMO\ demonstrator.
