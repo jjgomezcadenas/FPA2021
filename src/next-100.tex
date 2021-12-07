@@ -14,41 +14,41 @@
 The \Next\ detector is an asymmetric \HPXeEL\ TPC shown schematically in figure \ref{fig.next-100}.  The fiducial region is a cylinder of \NextTpcDiameter\ diameter and \NextTpcLength\ length, (\NextFiducialVolume\ fiducial volume) holding a mass of \NextFiducialMass\ of xenon gas enriched at \XeEnrichment\ in \XE, and operating at \NextPressure.  An energy plane ({\bf EP}),
 made of PMTs, provides a measurement of the energy integrating the full signal (\stwo) and records the primary scintillation light (\sone) which triggers the start-of-event (\tz). A tracking plane ({\bf TP}) provides a 2D image of the tracks propagating in the detector, which is then turned into a 3D image when combined with the measurement of the drift time.  
 
-\indent
+%\indent
 
 The TPC consists of a field cage, a cathode held at high voltage via high-voltage feedthroughs ({\bf HVFT}), and two electroluminescent meshes for the signal amplification.
-The field cage is designed to be a scalable solution for a larger system (i.e, for \NHD).  The design is based on affixing copper rings to High Density Polyethylene (\bf HDPE) staves that run the length of the drift and buffer regions.  
-A resistor chain along the field cage copper rings maintains a uniform electric field. Segmented light reflector panels made of Teflon inserted into vented grooves in the HDPE staves provide enhanced light collection, and the full field cage is wrapped in a thin polyethylene insulating sheet to avoid electrical breakdowns between the field cage rings and the outer copper shielding.
-The cathode, the anode and the gate (the latter two defining the EL region) consist of three large meshes.  Each mesh will consist of three large parts; the photo-etched mesh that is trapped and tensioned by a two-part frame. This design is the result of a four-year R\&D program.
+The field cage is designed to be a scalable solution for a larger system (i.e, for \NHD).  The design is based on affixing copper rings to High Density Polyethylene ({\bf HDPE}) staves that run the length of the drift and buffer regions.  
+A resistor chain along the field cage copper rings maintains a uniform electric field. Segmented light reflector panels made of polytetrafluoroethylene ({\bf PTFE}),  inserted into vented grooves in the HDPE staves provide enhanced light collection, and the full field cage is wrapped in a thin polyethylene insulating sheet to avoid electrical breakdowns between the field cage rings and the outer copper shielding.
+The cathode, the anode and the gate (the latter two defining the EL region) consist of three large meshes.  Each mesh will consist of three large parts; the photo-etched mesh that is trapped and tensioned by a two-part frame. 
 
-\indent
+%\indent
 
 The EP is made of 60 Hamamatsu R11410-10 photomultiplier tubes located behind the TPC cathode, with a coverage of approximately 30\%. This represents a compromise between the need to collect as much light as possible for a robust measurement of the energy and t$_0$, while minimising cost and technical complexity. However, the tradeoff is a relatively high contribution to the radioactive budget. The R11410-10 is a 3-in PMT especially developed for low-background operation, equipped with a synthetic silica window and a photocathode made of low temperature bialkali with quantum efficiency above 30\% for the emission wavelengths of xenon and TPB.
 The R11410-10 cannot be run above 6 atmospheres. To overcome this limitation, the PMTs are housed in a vacuum region behind 5 mm thick sapphire windows. %(\fig\ \ref{fig.EP}). 
-The PMTs are optically coupled to the windows using an optical gel with a refractive index intermediate between those of fused silica and sapphire. TPB is evaporatively coated on the external faces of the windows. 
+The PMTs are optically coupled to the windows using an optical gel with a refractive index intermediate between those of fused silica and sapphire. Tetraphenyl-butadiene ({\bf TPB}) is evaporatively coated on the external faces of the windows. 
 The PMT cables route through the conduits and the central manifold to a feedthrough in the pressure vessel nozzle.  
 
-\indent
+%\indent
 
-The TP consists of 56 boards with 64 SiPMs each for a total of 3584 sensors. With a 15.55 mm pitch, the TP overcovers the active drift volume, allowing to detect events near the Teflon walls that will be important for fiducialisation of events.
-The TP is separated 15 mm from the anode grid. This distance, larger than in the NEXT-White detector, is driven by mechanical constraints. In this case, the use of thicker (6 mm) Teflon masks helps in recovering the necessary light for a correct reconstruction of the events’ topology. These masks will act as collimators, providing a narrow Point Spread Function (PSF). As SiPMs, the \Next\ TP will use the model S13372-1350TE from Hamamatsu, with 1.3x1.3 mm$^2$ active surface area. Compared to \New\ SiPMs, \Next\ SiPMs will thus detect up to 60\% more photons.
+The TP consists of 56 boards with 64 SiPMs each for a total of 3584 sensors. With a 15.55 mm pitch, the TP overcovers the active drift volume, allowing to detect events near the PTFE walls that will be important for fiducialisation of events.
+The TP is separated 15 mm from the anode grid. This distance, larger than in the NEXT-White detector, is driven by mechanical constraints. In this case, the use of thicker (6 mm) PTFE masks helps in recovering the necessary light for a correct reconstruction of the events’ topology. These masks will act as collimators, providing a narrow Point Spread Function (PSF). As SiPMs, the \Next\ TP will use the model S13372-1350TE from Hamamatsu, with 1.3x1.3 mm$^2$ active surface area. Compared to \New\ SiPMs, \Next\ SiPMs will thus detect up to 60\% more photons.
 Further improvements with respect to \NEW\ include the reduction of kapton mass and glue in the front face of the boards, which will substantially reduce the radioactive budget. This is accomplished by using a single layer of kapton.
 
 \subsubsection{Electronics and DAQ}
 
 The TP readout is based on the high-performing and reliable \NEW\ electronics and interconnections \cite{Rodriguez:2015a}, with some mechanical modifications required to efficiently double the number of readout channels,. Signals from the SiPMs are passively fed to readout electronics placed 4-to-5 m from the detector vessel. This readout concept nearly hits a practical limit in NEXT-100: the number of wires across the vessel cannot be further scaled up without raising reliability concerns. This is the reason why \NHD\  requires a new solution that implies installing readout and multiplexing ASICs inside the vessel (see section \ref{sec.hd}). %The new readout concept for \NHD\ is described in section \ref{ASIC} and requires a 3-year R\&D program, which has already been planned and scheduled.
 
-\indent
+%\indent
 
 The PMT readout electronics is the same  used in \NEW\ and is described in \cite{Alvarez:2019a}. Scaling up from 12 to 60 PMTs is accomplished by simple replication of 8-channel front-end modules and 12-channel digitisers. A decade of experience designing and operating PMT bases, amplifiers and digitisers have led to a sound and reliable design. %The grounded-cathode PMT connection requires AC coupling and thus a baseline restoration circuit. We have opted for a digital baseline restoration algorithm running on an FPGA, based on the inverse function of a high-pass filter, whose coefficients are tuned for each channel to ensure the best possible performance.
 
-\indent
+%\indent
 
 Data acquisition (DAQ) and trigger systems for NEXT-100 are also based (with small modifications) on those from \NEW\, which have successfully and reliably operated for several years. Reference \cite{Esteve:2021a} describes the DAQ partitions and architecture, the double-buffer and double-processor readout to avoid detector dead time, and the configurable trigger algorithms. The advantage of the current modular DAQ and event detection system is that it has been dimensioned from the beginning to cope with the increased number of sensors in NEXT-100. Due to the modularity of the electronics and the software framework (CERN ALICE's DATE), the DAQ hardware and online system can be easily scaled.
 
 \subsubsection{Lead Castle and Muon Veto}
 
-In order to shield  \Next\ against external radiogenic backgrounds (\eg, gammas emanating from the laboratory walls), the detector will be operated inside a ``lead castle'', which has already been used for NEXT-White data taking. Furthermore, the internal cosmogenic backgrounds induced by muon interactions in the lead and detector materials will be mitigated by a muon-veto covering the castle surfaces, as shown in \ig\ \ref{fig.muonveto}.  Without this system, the projected background index in \Next\ would be $\sim1.2\times10^{-3}$ counts/keV/kg/yr rather than our target value of $\sim5\times10^{-4}$ counts/keV/kg/yr.   
+In order to shield  \Next\ against external radiogenic backgrounds (\ie, gammas emanating from the laboratory walls), the detector will be operated inside a ``lead castle'', which has already been used for NEXT-White data taking. Furthermore, the internal cosmogenic backgrounds induced by muon interactions in the lead and detector materials will be mitigated by a muon-veto covering the castle surfaces, as shown in \fig\ \ref{fig.muonveto}.  Without this system, the projected background index in \Next\ would be $\sim1.2\times10^{-3}$ counts/keV/kg/yr rather than our target value of $\sim5\times10^{-4}$ counts/keV/kg/yr.   
 
 \begin{figure}[htbp!]
 \centering
@@ -58,20 +58,19 @@ In order to shield  \Next\ against external radiogenic backgrounds (\eg, gammas 
 \label{fig.muonveto}
 \end{figure}
 
-The muon veto will be built by LSC, as it is considered an infrastructure of the laboratory, like the lead castle. The system will be made of individual modules arranged in two different layers in orthogonal directions, so the X and Y coordinates of a crossing muon can be disentangled. A total of 14 modules (with sizes between \SI{3116$\times$2622}{\mm} and SI{1124$\times$ 2622}{\mm}) cover the external walls of the lead castle. Each one of the modules consists of a row of mechanically-joined 20 cm wide scintillator strips  (USMS-03 by UNIPLAST Inc.), placed side by side in a protective aluminum casing providing the necessary mechanical stability. Two wavelength shifting (WLS) fibers (Kuraray Y11(200)M, 1 mm diameter) are glued into two grooves in the long edges of each strip with a polysiloxane compound. Hamamatsu S12825-050P [9] silicon photomultipliers (SiPMs) are used to collect the scintillation light from the opposite side of each fiber. The SiPMs signals are sent to a commercial front-end electronics board with 32 channels (CAEN A1702), mounted at the readout end of the module, where  they are processed for storage.
+The muon veto will be funded by LSC, as it is considered an infrastructure of the laboratory, like the lead castle. Its construction and commissioning with the rest of the detector will be a collaboration between IFIC and LSC. The system will be made of individual modules arranged in two different layers in orthogonal directions, so the X and Y coordinates of a crossing muon can be disentangled. A total of 14 modules (with sizes between 3116$\times$2622 mm and 1124$\times$ 2622 mm) cover the external walls of the lead castle. Each one of the modules consists of a row of mechanically-joined 20 cm wide scintillator strips  (USMS-03 by UNIPLAST Inc.), placed side by side in a protective aluminum casing providing the necessary mechanical stability. Two wavelength shifting (WLS) fibers (Kuraray Y11(200)M, 1 mm diameter) are glued into two grooves in the long edges of each strip with a polysiloxane compound. Hamamatsu S12825-050P [9] silicon photomultipliers (SiPMs) are used to collect the scintillation light from the opposite side of each fiber. The SiPMs signals are sent to a commercial front-end electronics board with 32 channels (CAEN A1702), mounted at the readout end of the module, where  they are processed for storage.
 
 \subsubsection{Status of the detector and data taking program}
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.7\textwidth]{img2/collage.pdf}
-\caption{\small a) The NEXT-100 apparatus; b) a detail showing the inner copper shield (\bf ICS) inside the pressure vessel; c)Detail of the gas inlet pipes through the EP. d) a detail showing the integration of the detector. ICS comes first, then field cage is slid in, then the end-caps carrying the heavy copper supports for the tracking plane and energy plane are moved in.} 
+\caption{\small a) The NEXT-100 apparatus; b) a detail showing the inner copper shield ({\bf ICS}) inside the pressure vessel; c)Detail of the gas inlet pipes through the EP. d) a detail showing the integration of the detector. ICS comes first, then field cage is slid in, then the end-caps carrying the heavy copper supports for the tracking plane and energy plane are moved in.} 
 \label{fig.n100e}
 \end{figure} 
 
 
-
-All \Next\ subsystems are currently completed or in late stage of construction, with the exception of the muon veto that will be built during 2022. At the time of writing this proposal, the pressure vessel ({\bf PV}) is being installed in the refurbished lead castle (adapted to \Next\ after completing the operation of \NEW). The gas system has also been upgraded and tested. The inner copper shield is being machined and will be installed in the next few months inside the PV. All the electronics is ready and tested. The three major subsystems, EP, TP and the TPC will be installed inside the vessel from March to May, 2022 (figure \ref{fig.n100e}). The detector is scheduled to start operations in June. We foresee six months for the initial commissioning and calibration, followed by 12 months taking data with depleted xenon (background measurement) once the muon veto is installed, before the start of the run with depleted xenon, which will take three years. 
+All \Next\ subsystems are currently completed or in late stage of construction, with the exception of the muon veto that will be built during 2022. At the time of writing this proposal, the pressure vessel ({\bf PV}) is being installed in the refurbished lead castle (adapted to \Next\ after completing the operation of \NEW). The gas system has also been upgraded and tested. The inner copper shield  ({\bf ICS}) is being machined and will be installed in the next few months inside the PV. All the electronics is ready and tested. The three major subsystems, EP, TP and the TPC will be installed inside the vessel from March to May, 2022 (figure \ref{fig.n100e}). The detector is scheduled to start operations in June. We foresee six months for the initial commissioning and calibration ---the muon veto will be commissioned during this period---, followed by 12 months taking data with depleted xenon (background measurement) once the muon veto is installed, before the start of the run with depleted xenon. 
 %The physics run will take three years (2023 to 2025). 
 %During 2025, \Next\ data taking will proceed in parallel with the assembly of the \NHD\ detector and the setup of the infrastructures (\NHD\  will operate in a different area than \Next\ thus making possible the operation of the later while the former is being assembled). 
 
@@ -82,7 +81,7 @@ All \Next\ subsystems are currently completed or in late stage of construction, 
 The projected background in the ROI for \Next\ is \SI{7}{\ev\per\tonne\per\yr}, with the leading background sources being the PMTs and the substrates of the SiPMs~\cite{Martin-Albo:2015rhw}.  This translates in less than one background event per year of operation, allowing the apparatus to reach 
 a sensitivity of \SI{6E25}{\yr} with an exposure of \SI{300}{\kg\yr}. 
 
-\indent
+%\indent
 
 The original goal of \Next\ was to reach a sensitivity of \SI{1E26}{\yr}. This would require a total exposure of \SI{500}{\kg\yr}. Given the null results obtained 
 by current-generation experiments, however, a better strategy is to scale up the technology to detector masses in the ton range as soon as possible. However, simply increasing the target mass by an oder of magnitude is not enough to reach the target sensitivity of \NHD\ (\SI{1E27}{\yr}), which also requires to reduce the background to \SI{1}{\ev\per\tonne\per\yr} or less (see section \ref{sec.hd}). While \NHD\ is being designed to achieve such background reduction, the operation of \Next\ is essential to demonstrate that our background model is accurate, and also to identify possible unexpected background sources which can be corrected for \NHD. Further goals of \Next\ are to optimise detector performance, in particular the energy resolution and the background rejection capabilities of the topological signature. We also aim to refine the technique, demonstrated in our recent \bbtnu\ analysis with \NEW\ \cite{nextcollaboration2021measurement} of measuring directly the backgrounds from the data themselves, thus minimising the background model dependence of the Monte Carlo.  
